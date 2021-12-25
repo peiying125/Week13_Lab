@@ -1,0 +1,33 @@
+div{
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 500px;
+	background-color: lightgray;
+	margin: 0 auto;
+}
+
+
+
+input[type="text"]{
+	border-radius: 5px;
+	width: 450px;
+	height: 30px;
+}
+
+.hello{
+	width: 450px;
+	height: 30px;
+}
+
+input[type="submit"]{
+	background-color: orange;
+	border-radius: 5px;
+	width: 300px;
+	height: 40px;
+}
+p{
+	text-align: center ;
+}
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body>
+<div>
+
+
+	<h1><p>JS Calculator</p></h1>
+    
+    <p>Number1</p>
+    <p><input type="text" id="num1" name="num1" size="60"></p>
+    <p>Number2</p>
+    <p><input type="text" id="num2" name="num2"size="60"></p>
+    <p>Operate way?</p>
+    <p><label>
+    <select id="operator" class="hello" >
+    	<option value="addition">+</option>
+    	<option value="substraction">-</option>
+    	<option value="multiplication">*</option>
+    	<option value="division">/</option>
+       </select> </label></p>
+
+    <p><label><br>
+    	<input value="Add" type="submit" style="width: 438px" style="background-color: orange" onclick="calculate();">
+    </label></p>
+
+   <p>Result=
+   <span id="result"></span>
+</p>
+ 
+	<script>
+		
+
+
+		function calculate(){
+			var num1=parseInt(document.getElementById("num1").value);
+			var num2=parseInt(document.getElementById("num2").value);
+			var operator=document.getElementById('operator').value;
+			document.getElementById("result").innerHTML=operate(num1,num2,operator);
+			
+		}
+		function operate(num1,num2,operator){
+			if(operator=='addition'){
+				return num1+num2;
+			}else if(operator=='substraction'){
+				return num1-num2;
+			}else if(operator=='multiplication'){
+				return num1*num2;
+			}if(operator=='division'){
+				return num1/num2;
+			}
+
+		}
+
+
+    </script>
+   
+</div>
+</body>
+</html>
